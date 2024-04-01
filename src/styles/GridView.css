@@ -1,0 +1,40 @@
+.gridViewContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 100%;
+}
+
+.gridFile {
+  max-width: 20vw;
+}
+
+@media screen and (max-width: 900px) {
+  .gridViewContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gridFile {
+    max-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gridViewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridFile {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gridViewContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridFile {
+    max-width: 90vw;
+  }
+}

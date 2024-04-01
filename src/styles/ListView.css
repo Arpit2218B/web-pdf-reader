@@ -1,0 +1,9 @@
+.listViewContainer {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .hiddenColumns {
+    display: none;
+  } 
+}

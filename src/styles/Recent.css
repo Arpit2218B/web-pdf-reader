@@ -1,0 +1,46 @@
+.recentlyOpened {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 8px;
+}
+
+.recentlyOpenedHeading {
+  color: #888;
+  font-weight: 500;
+}
+
+.recentFiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.recentFile {
+  max-width: 30vw;
+}
+
+.noFiles {
+  font-size: 0.75rem;
+  margin-top: 16px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 900px) {
+  .recentFiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recentFile {
+    max-width: 45vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .recentFiles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recentFile {
+    max-width: 90vw;
+  }
+}
